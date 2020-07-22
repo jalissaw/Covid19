@@ -1,4 +1,4 @@
-
+// const { CSSTransition } = require("react-transition-group");
 
 
 class Covid extends React.Component {
@@ -50,7 +50,7 @@ class Covid extends React.Component {
           states.map(state => {
             if (userInput === state.state) {
               return (
-                <div className="grid">
+                <div className="grid example">
                   <h2 className="states items">{"State: " + state.state}</h2>
                   <h2 className="negative items">{"Negative Cases: " + " " + state.negative.toLocaleString()}</h2>
                   <h2 className="inegative items">{"Negative Cases Increased: " + state.negativeIncrease.toLocaleString()}</h2>
@@ -61,6 +61,7 @@ class Covid extends React.Component {
                   <h2 className="deaths items">{"Deaths: " + state.death}</h2>
                   <h2 className="ideaths items">{"Deaths Increased: " + state.deathIncrease.toLocaleString()}</h2>
                   <h2 className="total items">{"Total Cases: " + state.total.toLocaleString()}</h2>
+                  <h2 className="dated items">{"Updated: " + state.dateChecked}</h2>
                 </div>
               )
             }
