@@ -59,7 +59,7 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px 10px;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
     animation: fade ease-in-out 0.4s forwards ;
 }
 
@@ -112,6 +112,32 @@ h2 {
     100%{opacity: 1; transform: translateY(0px);}
 }
 
+@media only screen and (min-width: 415px) and (max-width: 750px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 75vh;
+      padding: 0px 10px;
+    }
+
+    .items {
+        border: none;
+        margin: 5px 0px;
+        font-size: 1.2em;
+        padding: 0px 25px;
+    }
+
+    .fields {
+        padding-top: 20px;
+    }
+
+    .title {
+        padding: 0px 10px;
+    }
+
+  }
+
 @media only screen and (max-width: 415px) and (min-width: 376px) {
     .grid {
       display: flex;
@@ -124,13 +150,14 @@ h2 {
     .items {
         border: none;
         margin: 5px 0px;
-        font-size: 1em;
+        font-size: 0.95em;
         padding: 0px 25px;
     }
 
     .fields {
         padding-top: 20px;
     }
+
   }
 
   @media only screen and (min-width: 321px) and (max-width: 375px) {
@@ -154,6 +181,33 @@ h2 {
     }
 
     .title{
-        font-size: 1.7em
+        font-size: 1.7em;
+        padding-bottom: 5px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 75vh;
+      padding: 0px 10px;
+    }
+
+    .items {
+        border: none;
+        margin: 5px 0px;
+        font-size: 0.8em;
+        padding: 0px 25px;
+    }
+
+    .fields {
+        padding: 20px 0px ;
+    }
+
+    .title{
+        font-size: 1.5em;
+        padding-bottom: 5px;
     }
   }
