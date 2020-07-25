@@ -41,9 +41,9 @@ class Covid extends React.Component {
       deaths, deathIncreases, hospitalized, recovered, totalCases, results } = this.state
 
     return (
-      <div>
-        <h1 className="title">{"Enter State Abbreviation: " + this.state.userInput}</h1>
+      <div className="covid">
         <div className="fields">
+          <h1 className="title">{"Enter State Abbreviation: " + this.state.userInput}</h1>
           <input className="getInfo" onChange={this.getInfo}></ input>
         </div>
         {

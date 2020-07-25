@@ -36,21 +36,26 @@ h2 {
 
 .fields {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-self: center;
+    text-align: center;
 }
 
 .getInfo {
     height: 30px;
     width: 250px;
-    border: black 2px solid;
-    background: rgb(197, 81, 81);
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background: rgba(197, 81, 81, 0.6);
     color: white;
+    margin: 0 auto;
 }
 
 .grid {
     display: grid;
-    height: 90vh;
+    height: 89vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px 10px;
@@ -106,3 +111,45 @@ h2 {
     50%{opacity: 0.5;}
     100%{opacity: 1; transform: translateY(0px);}
 }
+
+@media only screen and (max-width: 415px) and (min-width: 376px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 75vh;
+      padding: 0px 10px;
+    }
+
+    .items {
+        border: none;
+        margin: 5px 0px;
+        font-size: 1.2em;
+        padding: 0px 25px;
+    }
+
+    .fields {
+        padding-top: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 375px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 75vh;
+      padding: 0px 10px;
+    }
+
+    .items {
+        border: none;
+        margin: 5px 0px;
+        font-size: 1.2em;
+        padding: 0px 25px;
+    }
+
+    .fields {
+        padding-top: 20px;
+    }
+  }
