@@ -124,7 +124,7 @@ h2 {
     .items {
         border: none;
         margin: 5px 0px;
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 0px 25px;
     }
 
@@ -133,7 +133,7 @@ h2 {
     }
   }
 
-  @media only screen and (min-width: 360px) and (max-width: 375px) {
+  @media only screen and (min-width: 321px) and (max-width: 375px) {
     .grid {
       display: flex;
       flex-direction: column;
@@ -145,11 +145,15 @@ h2 {
     .items {
         border: none;
         margin: 5px 0px;
-        font-size: 1.2em;
+        font-size: 1em;
         padding: 0px 25px;
     }
 
     .fields {
-        padding-top: 20px;
+        padding: 20px 0px ;
+    }
+
+    .title{
+        font-size: 1.7em
     }
   }
