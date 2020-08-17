@@ -55,7 +55,7 @@ class Covid extends React.Component {
                   <h2 className="negative items">{"Negative Cases: " + " " + state.negative.toLocaleString()}</h2>
                   <h2 className="inegative items">{"Negative Cases Increased: " + state.negativeIncrease.toLocaleString()}</h2>
                   <h2 className="positive items">{"Positive Cases: " + " " + state.positive.toLocaleString()}</h2>
-                  <h2 className="ipositive items">{"Postive Cases Increased: " + state.positiveIncrease.toLocaleString()}</h2>
+                  <h2 className="ipositive items">{"Positive Cases Increased: " + state.positiveIncrease.toLocaleString()}</h2>
                   <h2 className="hospital items">{"Hospitalized: " + state.hospitalized}</h2>
                   <h2 className="recover items">{"Recovered: " + state.recovered}</h2>
                   <h2 className="deaths items">{"Deaths: " + state.death}</h2>
