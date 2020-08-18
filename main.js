@@ -28,17 +28,15 @@ class Covid extends React.Component {
       .then(results => {
         this.setState({
           states: results
+        }).catch((err) => {
+          console.log(err)
         })
-        console.log(results)
-
       })
   }
 
   render() {
 
-    const { states, userInput, negative,
-      negativeIncreased, positive, positiveIncrease,
-      deaths, deathIncreases, hospitalized, recovered, totalCases, results } = this.state
+    const { states, userInput } = this.state
 
     return (
       <div className="covid">
